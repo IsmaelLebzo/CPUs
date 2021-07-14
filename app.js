@@ -1,5 +1,5 @@
 var pickedcpu = prompt("Hello and Welcome to AMD CPUs Website what CPU are you looking for?")
-
+let question = confirm("Are you sure?")
 
 
 if(pickedcpu == "Ryzen 5"){
@@ -23,3 +23,4 @@ document.write(
 else{
   alert('Do you call this a CPU?')
 }
+console.log(pickedcpu)
