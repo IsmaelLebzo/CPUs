@@ -1,4 +1,6 @@
 alert("Hello and Welcome to AMD CPUs Website")
+
+function userPickedCPU(){
 var pickedcpu = prompt("What CPU would u like to know about? , Please choose one of these CPUs: Ryzen 5, Ryzen 7, Ryzen 9")
 
 while(pickedcpu != "Ryzen 5" && pickedcpu != "Ryzen 7" && pickedcpu != "Ryzen 9" && pickedcpu != "ryzen 5" && pickedcpu != "ryzen 7" && pickedcpu != "ryzen 9" ){
@@ -58,5 +60,44 @@ document.write(
 
   }
 }
+}
+userPickedCPU();
+function rate(){
+var Stars = prompt("How many stars would u rate my website? 0-5");
 
-console.log(pickedcpu)
+if(Stars == 0){
+var zero = prompt("Oh no, give us feedback on what we can improve!");
+alert("feedback submitted!")
+document.write(
+ "<img  src='https://smurfdok.files.wordpress.com/2013/04/0stars.png' width='150' height='30'/>" + "</div>")
+}
+else if(Stars == 1){
+var one = prompt("Oh no, give us feedback on what we can improve!");
+alert("feedback submitted!")
+document.write(
+ "<img  src='https://upload.wikimedia.org/wikipedia/commons/d/dd/Star_rating_1_of_5.png' width='150' height='30'/>" + "</div>")
+}
+else if(Stars == 2){
+var two = prompt("Oh that's sad. Give us feedback on what we can improve! So we can get a higher rating than this!");
+alert("feedback submitted!")
+document.write(
+ "<img  src='https://upload.wikimedia.org/wikipedia/commons/9/95/Star_rating_2_of_5.png' width='150' height='30'/>" + "</div>")
+}
+else if(Stars == 3){
+var three = prompt("That's decent, but can you tell us what  can we improve with?");
+alert("feedback submitted!")
+document.write(
+ "<img  src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/3_stars.svg/1024px-3_stars.svg.png' width='150' height='30'/>" + "</div>")
+}
+else if(Stars == 4){
+alert("That's nice from you, hope we can achive this 5 stars soon ^-^")
+document.write(
+ "<img  src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Star_rating_4_of_5.png' width='150' height='30'/>" + "</div>")
+}
+else if(Stars == 5){
+alert("OH WE DID IT! Hope you liked our website!")
+document.write(
+ "<img  src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/535px-5_stars.svg.png' width='150' height='30'/>" + "</div>")
+}
+}
+rate();
